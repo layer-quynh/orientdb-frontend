@@ -1,23 +1,25 @@
-<div class="row">
-    <div id="header">
-        <nav class="navbar navbar-inverse">
-            <div class="navbar-collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="#/">Select</a></li>
-                    <li><a href="#/insert">Insert</a></li>
-                    <li><a href="#/update">Update</a></li>
-                    <li><a href="#/delete">Delete</a></li>
-                    <li><a href="#/join">Join</a></li>
-                </ul>
-            </div>
-        </nav>
-    </div>    
-</div>
+<div id="header">
+    <nav class="navbar navbar-inverse">
+        <div class="navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="#/">Select</a></li>
+                <li><a href="#/insert">Insert</a></li>
+                <li><a href="#/update">Update</a></li>
+                <li><a href="#/delete">Delete</a></li>
+                <li><a href="#/join">Join</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>    
 
 <div class="table">
     <div class="container">
+        <div>
+            <img src="../../img/orient.png">
+        </div>
         <div class="row">
-            <h2>Form check time</h2>
+            <div col-sm-4>
+                <h2>Form check time</h2>
                 <form>
                 <div class="form-group">
                     <label>Year</label>
@@ -28,7 +30,8 @@
                     <input type="text" class="form-control" placeholder="Limit" ng-model="limit">
                 </div>
                 <button type="submit" class="btn btn-primary" ng-click="onClick()">Check</button>
-            </form>
+                </form>
+            </div>
         </div>
         <div class="row">
             <h3>Time: </h3><br>
