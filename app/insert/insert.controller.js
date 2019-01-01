@@ -12,7 +12,7 @@ angular.module('app')
     }
 
     insertOrient = function() {
-        $http.post('http://128.199.205.8:9000/orientdb/insert', $scope.element)
+        $http.post('http://167.99.66.125:9000/orientdb/insert', $scope.element)
         .then(function successCallback(data) {
             $scope.orientTime = data.data.time
             $scope.list = data.data.row
@@ -23,7 +23,7 @@ angular.module('app')
     }
     
     insertMysql = function() {
-        $http.post('http://128.199.205.8:8000/mysql/insert', $scope.element)
+        $http.post('http://167.99.66.125:8000/mysql/insert', $scope.element)
         .then(function successCallback(data) {
             $scope.sqlTime = data.data
         }, function(err) {

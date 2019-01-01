@@ -11,7 +11,7 @@ angular.module('app')
   }
 
   getOrientTime = function() {
-      $http.put('http://128.199.205.8:9000/orientdb/update', $scope.element)
+      $http.put('http://167.99.66.125:9000/orientdb/update', $scope.element)
       .then(function successCallback(data) {
           $scope.orientTime = data.data.time
           $scope.list = data.config.data
@@ -21,7 +21,7 @@ angular.module('app')
   }
 
   getSqlTime = function() {
-    $http.put('http://128.199.205.8:8000/mysql/update', $scope.element)
+    $http.put('http://167.99.66.125:8000/mysql/update', $scope.element)
     .then(function successCallback(data) {
         $scope.sqlTime = data.data
         console.log(data)

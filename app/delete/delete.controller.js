@@ -8,7 +8,7 @@ angular.module('app')
     }
 
     orientDelete = function() {
-        $http.delete('http://128.199.205.8:9000/orientdb/delete?nconst=' + $scope.nconst)
+        $http.delete('http://167.99.66.125:9000/orientdb/delete?nconst=' + $scope.nconst)
         .then(function successCallback(data) {
             $scope.orientTime = data.data.time
         }, function(err) {
@@ -17,7 +17,7 @@ angular.module('app')
     }
 
     mysqlDelete = function() {
-        $http.delete('http://128.199.205.8:8000/mysql/delete?nconst=' + $scope.nconst)
+        $http.delete('http://167.99.66.125:8000/mysql/delete?nconst=' + $scope.nconst)
         .then(function successCallback(data) {
             $scope.sqlTime = data.data
         }, function(err) {

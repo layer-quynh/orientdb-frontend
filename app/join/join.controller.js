@@ -9,7 +9,7 @@ angular.module('app')
     }
 
     getJoinMysql = function() {
-        $http.get('http://128.199.205.8:8000/mysql/join?vote=' + $scope.vote + '&limit=' + $scope.limit)
+        $http.get('http://167.99.66.125:8000/mysql/join?vote=' + $scope.vote + '&limit=' + $scope.limit)
         .then(function successCallback(data) {
             $scope.sqlTime = data.data
         }, function(err) {
@@ -18,7 +18,7 @@ angular.module('app')
     }
 
     getJoinOrient = function() {
-        $http.get('http://128.199.205.8:9000/orientdb/join?vote=' + $scope.vote + '&limit=' + $scope.limit)
+        $http.get('http://167.99.66.125:9000/orientdb/join?vote=' + $scope.vote + '&limit=' + $scope.limit)
         .then(function successCallback(data) {
             $scope.orientTime = data.data.time
             $scope.list = data.data.list

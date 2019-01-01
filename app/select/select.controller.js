@@ -12,7 +12,7 @@ angular.module('app')
         
         // Get time of mysql
         getTimeSql = function() {
-            $http.get('http://128.199.205.8:8000/mysql/select?bYear=' + $scope.year + '&limit=' + $scope.limit)
+            $http.get('http://167.99.66.125:8000/mysql/select?bYear=' + $scope.year + '&limit=' + $scope.limit)
             .then(function successCallback(data) {
                 // console.log(data.data);
                 $scope.sqlTime = data.data;
@@ -23,7 +23,7 @@ angular.module('app')
 
         // Get time of orientDB
         getTimeOrient = function() {
-            $http.get('http://128.199.205.8:9000/orientdb/select?bYear=' + $scope.year + '&limit=' + $scope.limit)
+            $http.get('http://167.99.66.125:9000/orientdb/select?bYear=' + $scope.year + '&limit=' + $scope.limit)
             .then(function successCallback(data) {
                 console.log(data.data.list)
                 $scope.orientTime = data.data.time
